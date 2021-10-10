@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../pictures/start_screen.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.first-title {
+    display: block;
+    height: 340px;
+    padding-left: 205px;
+    padding-top: 77.5px;
+}
+
+.second-title {
+    display: block;
+    height: 340px;
+    padding-left: 280px;
+    padding-top: 100px;
+}
+
+.button {
+    display: block;
+    opacity: 0;
+    height: 220px;
+    padding-left: 810px;
+    padding-top: 60px;
+}
+
+.start {
+    display: inline-block;
+	width: 300px;
+    height: 100px;
+	background-color: rgb(255, 36, 36);
+	border-radius: 15px;
+	border: 5px ridge black;
+}
+
+.start:hover {
+    background-color: rgb(240, 238, 238);
+    border: 10px double black;
+    transition: 0.5s;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+	font-size: 42px;
+	color: rgb(0, 0, 0);
+}
+
+.credits {
+    display: block;
+    height: 37px;
+}
+
+.letter {
+    display: inline-block;
+    height: 185px;
+    width: 203px;
+    margin-right: 10px;
+    transform: scale(0);
+}
+
+.letter-small {
+    display: inline-block;
+    height: 123px;
+    width: 110px;
+    margin-right: 10px;
+    transform: scale(0);
+}
+
+.credits {
+    text-align: center;
+}
+
+.copyright {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 37px;
+    letter-spacing: 1px;
+}

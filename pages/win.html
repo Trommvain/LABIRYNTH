@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/win.css">
+    <title>Колобок</title>
+</head>
+<body>
+    <div class="flex-container">
+        <img id="leftimg" src="../pictures/castle_left.jpg">
+        <img id="rightimg" src="../pictures/castle_right.jpg">
+    </div>
+    <img id="kolobok" src="../pictures/kolobok.png">
+    <div id="title">
+        <img class="letter" src="../pictures/letters/П.png">
+        <img class="letter" src="../pictures/letters/О.png">
+        <img class="letter" src="../pictures/letters/Б.png">
+        <img class="letter" src="../pictures/letters/Е.png">
+        <img class="letter" src="../pictures/letters/Д.png">
+        <img class="letter" src="../pictures/letters/А.png">
+    </div>
+    <img id="fullimg" src="../pictures/castle.jpg">
+    <div id="first">
+        <p class="text-title"> <b>Ведущий программист</b></p>
+        <p class="text-name">Сергей Горбонос</p>
+    </div>
+    <div id="second">
+        <p class="text-title"> <b>Концепция и дизайн</b></p>
+        <p class="text-name">Сергей Горбонос</p>
+    </div>
+    <div id="third">
+        <p class="text-title"> <b>Креативный директор</b></p>
+        <p class="text-name">Алина Горбонос</p>
+    </div>
+    <div id="fourth">
+        <p class="text-title"> <b>Исполнительный директор</b></p>
+        <p class="text-name">Иван Горбонос</p>
+    </div>
+    <div id="footer">
+        <p class="text-title"> Gorbonos Scientific Studios, 2021</p>
+    </div>
+    <img id="dim" src="../pictures/dim.jpg">
+    
+</body>
+<script>
+    window.onload = function() {
+        let letter = document.getElementsByClassName('letter');
+        setTimeout(() => {kolobok.style.left = '780px'}, 1000);
+        setTimeout (() => {
+            title.style.opacity = 1; 
+            fullimg.style.display = 'block';
+            kolobok.style.zIndex = 10;
+        }, 4500 );
+        setTimeout (() => {
+            kolobok.style.filter = 'blur(7px) brightness(0.2)';
+            fullimg.style.filter = 'blur(7px) brightness(0.2)';
+            for (let i = 0; i < letter.length; i++) {
+                letter[i].style.filter = 'blur(7px) brightness(0.2)';
+            }
+        }, 9000 );
+        setTimeout(() =>{first.style.opacity = 1;}, 14500);
+        setTimeout(() =>{first.style.opacity = 0;}, 17500);
+        setTimeout(() =>{second.style.opacity = 1;}, 19500);
+        setTimeout(() =>{second.style.opacity = 0;}, 21500);
+        setTimeout(() =>{third.style.opacity = 1;}, 23500);
+        setTimeout(() =>{third.style.opacity = 0;}, 26500);
+        setTimeout(() =>{fourth.style.opacity = 1;}, 28500);
+        setTimeout(() =>{fourth.style.opacity = 0;}, 31500);
+        setTimeout (() => {dim.style.opacity = 1}, 32000 );
+        setTimeout(() =>{footer.style.opacity = 1;}, 35000);
+        setTimeout(() =>{footer.style.opacity = 0;}, 39000);
+        setTimeout (() => document.location = '../index.html', 42000);
+    }
+</script>
+</html>

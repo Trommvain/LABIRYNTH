@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../pictures/rules.bmp");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 19%;
+}
+
+.start {
+    display: inline-block;
+	width: 300px;
+    height: 100px;
+	background-color: rgb(60, 224, 10);
+	border-radius: 15px;
+	border: 5px ridge black;
+}
+
+.start:hover {
+    background-color: rgb(240, 238, 238);
+    border: 10px double black;
+    transition: 0.5s;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+	font-size: 42px;
+	color: rgb(0, 0, 0);
+}

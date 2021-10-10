@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/game_over.css">
+    <title>Колобок</title>
+</head>
+<body>
+    <div class="title">
+        <img class="letter" src="../pictures/letters/K.png">
+        <img class="letter" src="../pictures/letters/О.png">
+        <img class="letter" src="../pictures/letters/Н.png">
+        <img class="letter" src="../pictures/letters/Е.png">
+        <img class="letter" src="../pictures/letters/Ц.png">
+        <div class="letter"></div>
+        <img class="letter" src="../pictures/letters/И.png">
+        <img class="letter" src="../pictures/letters/Г.png">
+        <img class="letter" src="../pictures/letters/Р.png">
+        <img class="letter" src="../pictures/letters/Ы.png">
+    </div>
+    <div class="button">
+        <button class="start" onclick="document.location='../pages/game.html'">
+            <p class="text">Продолжить</p></button>
+    </div>
+    <div class="button">
+        <button class="back" onclick="document.location='../index.html'">
+            <p class="text">На главную</p></button>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+
+        let button1 = document.getElementsByClassName('start');
+        let button2 = document.getElementsByClassName('back');
+        let title = document.getElementsByClassName('title');
+
+        setTimeout (() => {title[0].style.opacity = 1;}, 500 );
+        setTimeout (() => {button1[0].style.display = 'inline-block';}, 3000 );
+        setTimeout (() => {button2[0].style.display = 'inline-block';}, 3500 );
+    }
+    </script>
+</html

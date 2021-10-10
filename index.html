@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Колобок</title>
+  </head>
+
+  <body>
+    <div class="first-title">
+      <img class="letter" src="pictures/letters/K.png" />
+      <img class="letter" src="pictures/letters/О.png" />
+      <img class="letter" src="pictures/letters/Л.png" />
+      <img class="letter" src="pictures/letters/О.png" />
+      <img class="letter" src="pictures/letters/Б.png" />
+      <img class="letter" src="pictures/letters/О.png" />
+      <img class="letter" src="pictures/letters/K.png" />
+    </div>
+    <div class="button">
+      <button class="start" onclick="document.location='pages/rules.html'">
+        <p class="text">Начать игру</p>
+      </button>
+    </div>
+    <div class="second-title">
+      <img class="letter-small" src="pictures/letters/В.png" />
+      <div class="letter-small"></div>
+      <img class="letter-small" src="pictures/letters/Л.png" />
+      <img class="letter-small" src="pictures/letters/А.png" />
+      <img class="letter-small" src="pictures/letters/Б.png" />
+      <img class="letter-small" src="pictures/letters/И.png" />
+      <img class="letter-small" src="pictures/letters/Р.png" />
+      <img class="letter-small" src="pictures/letters/И.png" />
+      <img class="letter-small" src="pictures/letters/Н.png" />
+      <img class="letter-small" src="pictures/letters/Т.png" />
+      <img class="letter-small" src="pictures/letters/Е.png" />
+    </div>
+    <div class="credits">
+      <p class="copyright">
+        &copy;Gorbonos Scientific Studios, 2021. All rights reserved.
+      </p>
+    </div>
+  </body>
+  <script>
+    window.onload = function () {
+      function growLetter(letter, j) {
+        for (let i = 0.1; i <= 1.0; i += 0.1) {
+          setTimeout(() => {
+            letter[j].style.transform = "scale(" + i + ")";
+          }, i * 300);
+        }
+      }
+
+      function firstTitle() {
+        let letter = document.getElementsByClassName("letter");
+
+        for (let j = 0; j < letter.length; j++) {
+          setTimeout(() => {
+            growLetter(letter, j);
+          }, j * 300);
+        }
+      }
+
+      function secondTitle() {
+        let letterSmall = document.getElementsByClassName("letter-small");
+
+        for (let j = 0; j < letterSmall.length; j++) {
+          growLetter(letterSmall, j);
+        }
+      }
+
+      let button = document.getElementsByClassName("button");
+
+      setTimeout(() => firstTitle(), 500);
+      setTimeout(() => secondTitle(), 3000);
+      setTimeout(() => {
+        button[0].style.opacity = 1;
+      }, 4000);
+    };
+  </script>
+</html>

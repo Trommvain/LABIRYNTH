@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../pictures/game_over.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.title {
+    display: block;
+    height: 40px;
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.letter {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-right: 4px;
+}
+
+.button {
+    display: block;
+    margin-top: 3%;
+}
+
+.start {
+    display: none;
+	width: 300px;
+    height: 100px;
+	background-color: rgb(60, 224, 10);
+	border-radius: 15px;
+	border: 5px ridge black;
+}
+
+.start:hover {
+    background-color: rgb(240, 238, 238);
+    border: 10px double black;
+    transition: 0.5s;
+}
+
+.back {
+    display: none;
+	width: 300px;
+    height: 100px;
+	background-color: rgb(255, 36, 36);
+	border-radius: 15px;
+	border: 5px ridge black;
+}
+
+.back:hover {
+    background-color: rgb(240, 238, 238);
+    border: 10px double black;
+    transition: 0.5s;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+	font-size: 42px;
+	color: rgb(0, 0, 0);
+}

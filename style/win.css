@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    cursor: none;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftimg {
+    width: 747px;
+    z-index: 3;
+    transition: filter 5s;
+}
+
+#rightimg {
+    width: 1173px;
+    z-index: 1;
+    transition: filter 5s;
+}
+
+#kolobok {
+    position: absolute;
+    z-index: 2;
+    left: 650px;
+    top: 585px;
+    width: 100px;
+    height: 100px;
+    transition: left 3s, filter 5s;
+}
+
+#title {
+    display: inline-block;
+    position: fixed;
+    top: 75px;
+    left: 1020px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.letter {
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin-right: 4px;
+    transition: filter 5s;
+}
+
+#fullimg {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    transition: filter 5s;
+}
+
+#first {
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    top: 36%;
+    left: 36%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#second {
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    top: 36%;
+    left: 36%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#third {
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    top: 36%;
+    left: 36%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#fourth {
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 100;
+    width: 500px;
+    height: 500px;
+    top: 36%;
+    left: 36%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+#footer {
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 2000;
+    width: 520px;
+    height: 500px;
+    top: 93%;
+    left: 35%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.text-title {
+    font-family: Arial, sans-serif;
+	font-size: 32px;
+	color: rgb(255, 255, 255);
+}
+
+.text-name {
+    font-family: Arial, sans-serif;
+	font-size: 60px;
+	color: rgb(255, 255, 255);
+}
+
+#dim {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 5s;
+}
