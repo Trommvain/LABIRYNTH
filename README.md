@@ -1,0 +1,2 @@
+# LABIRYNTH
+Simple browser game
