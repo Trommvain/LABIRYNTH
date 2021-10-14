@@ -405,21 +405,21 @@ window.onload = function() {
     let troll3 = new Enemy (772, 379, 'troll3');
     let troll4 = new Enemy (1276, 673, 'troll4');
     let troll5 = new Enemy (1822, 589, 'troll5');
-    let troll6 = new Enemy (1276, 43, 'troll6');
-    let troll7 = new Enemy (688, 547, 'troll7');
-    let troll8 = new Enemy (1528, 505, 'troll8');
-    let troll9 = new Enemy (142, 295, 'troll9');
-    let troll10 = new Enemy (1738, 169, 'troll10');
+    // let troll6 = new Enemy (1276, 43, 'troll6');
+    // let troll7 = new Enemy (688, 547, 'troll7');
+    // let troll8 = new Enemy (1528, 505, 'troll8');
+    // let troll9 = new Enemy (142, 295, 'troll9');
+    // let troll10 = new Enemy (1738, 169, 'troll10');
     setInterval(() => {
         trollMove(troll1);
         trollMove(troll2);
         trollMove(troll3);
         trollMove(troll4);
         trollMove(troll5);
-        trollMove(troll6);
-        trollMove(troll7);
-        trollMove(troll8);
-        trollMove(troll9);
-        trollMove(troll10);
+        // trollMove(troll6);
+        // trollMove(troll7);
+        // trollMove(troll8);
+        // trollMove(troll9);
+        // trollMove(troll10);
     }, 400);
 }
